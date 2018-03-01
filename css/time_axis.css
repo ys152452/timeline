@@ -1,0 +1,431 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+ul {
+	list-style: none outside none;
+}
+
+body,
+h2,
+ul,
+h3 {
+	padding: 0;
+	margin: 0;
+}
+
+.tab-pane {
+	width: 100%;
+	padding: 10px;
+}
+
+.timeline {
+	width: 600px;
+	margin: 0 auto;
+	background: url("../images/time_axis/u552.png") repeat-y 130px center;
+	position: relative;
+	z-index: 6;
+}
+
+.line_top_shadow {
+	width: 8px;
+	height: 28px;
+	background-color: #fff;
+	position: absolute;
+	z-index: 7;
+	top: 0;
+	left: 130px;
+}
+
+.line_bottom_shadow {
+	width: 8px;
+	height: 74px;
+	background-color: #fff;
+	position: absolute;
+	z-index: 8;
+	bottom: 0;
+	left: 130px;
+}
+
+.timeline-date .step_time {
+	background: url("../images/time_axis/u556.png") no-repeat right center;
+	float: left;
+	width: 74px;
+	position: relative;
+	z-index: 9;
+	padding-right: 81px;
+}
+
+.timeline-date h3 {
+	font-weight: normal;
+	font-size: 12px;
+	color: #A1A1A1;
+	text-align: center;
+	float: left;
+	line-height: 1.5;
+	height: 36px;
+	width: 100%;
+}
+
+.timeline-date .step_time_connect {
+	height: 18px;
+}
+
+.timeline-date h3 span {
+	display: block;
+}
+
+.timeline-date ul li div.right {
+	float: left;
+	margin-left: 30px;
+	width: 310px;
+	height: 140px;
+	border-radius: 10px;
+	margin-bottom: 6px;
+	color: #fff;
+	font-size: 16px;
+	overflow: hidden;
+	position: relative;
+}
+
+.timeline-date ul li {
+	position: relative;
+}
+
+.timeline-date ul li .node_img {
+	width: 20px;
+	height: 20px;
+	background: url("../images/time_axis/u558.png") no-repeat center;
+	position: absolute;
+	z-index: 10;
+	left: 123.5px;
+	top: 32px;
+}
+
+.timeline-date .right .border_b {
+	height: 50px;
+	line-height: 60px;
+	position: relative;
+}
+
+.timeline-date .right .border_b2 {
+	height: 46px;
+	width: 100%;
+	line-height: 46px;
+	position: absolute;
+	bottom: 0;
+}
+
+.timeline-date .right .border_b2 .camera {
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	right: 22px;
+	bottom: 12px;
+	cursor: pointer;
+	background: url(../images/camera.png) no-repeat;
+	background-size: 100% 100%;
+}
+.timeline-date .right .border_b2 .delete {
+	width: 24px;
+	height: 22px;
+	position: absolute;
+	right: 52px;
+	bottom: 12px;
+	cursor: pointer;
+	background: url(../images/delete.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.timeline-date .right .border_b2 .visual {
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	right: 82px;
+	bottom: 10px;
+	cursor: pointer;
+	background: url(../images/eye.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.timeline-date .right .font_cont {
+	margin-left: 118px;
+	height: 30px;
+	margin-bottom: 10px;
+	line-height: 15px;
+	font-size: 14px;
+	width: 170px;
+	word-break: break-all;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.timeline-date .right .num {
+	font-size: 40px;
+	margin-left: 6px;
+	width: 20px;
+	height: 46px;
+	display: inline-block;
+	position: relative;
+	padding-right: 46px;
+}
+
+.timeline-date .right .num i {
+	background: url("../images/icons.png") no-repeat;
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	right: 0;
+	top: 12px;
+}
+
+.timeline-date .right .info {
+	vertical-align: top;
+	margin-left: 40px;
+	width: 128px;
+	display: inline-block;
+	font-size: 18px;
+	line-height: 50px;
+}
+
+.timeline-date .right .question {
+	position: absolute;
+	right: 12px;
+	top: 12px;
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	vertical-align: top;
+	background: url(../images/icons.png) no-repeat;
+}
+
+.timeline-date .right .question img {
+	width: 24px;
+	height: 24px;
+}
+
+.timeline-date ul li .right {
+	background-color: #eaf1f7;
+}
+
+.color_style {
+	background-color: #548d93 !important;
+}
+
+.icon_style {
+	background: url("../images/time_axis/icon01.png") no-repeat right center !important;
+}
+
+.timeline-date ul li {
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.timeline-date .right .overflow {
+	overflow: hidden;
+	padding: 0 6px;
+}
+
+.timeline-date .right .overflow a {
+	display: block;
+	float: right;
+}
+
+.timeline-date .overflow a img {
+	display: block;
+	width: 20px;
+	height: 20px;
+	padding: 4px 10px 0 0;
+}
+
+.timeline-date .step0 .right {
+	border: #74ca1c 1px solid;
+	color: #74ca1c;
+}
+
+.timeline-date .step0 .right .border_b2 {
+	background: #74ca1c;
+}
+
+.timeline-date .step0 .right .question.complete {
+	background-position: -69px -53px;
+}
+
+.timeline-date .step0 .right .question {
+	background-position: -43px -53px;
+}
+
+.timeline-date ul li.step0 .num i {
+	background-position: 0 -45px;
+}
+
+.timeline-date .step1 .right {
+	border: #54c8d3 1px solid;
+	color: #54c8d3;
+}
+
+.timeline-date .step1 .right .border_b2 {
+	background: #54c8d3;
+}
+
+.timeline-date .step1 .right .question.complete {
+	background-position: -69px -53px;
+}
+
+.timeline-date .step1 .right .question {
+	background-position: -43px -53px;
+}
+
+.timeline-date ul li.step1 .num i {
+	background-position: 0 -45px;
+}
+
+.timeline-date .step2 .right {
+	border: #3dca84 1px solid;
+	color: #3dca84;
+}
+
+.timeline-date .step2 .right .border_b2 {
+	background: #3dca84;
+}
+
+.timeline-date .step2 .right .question.complete {
+	background-position: -69px -99px;
+}
+
+.timeline-date .step2 .right .question {
+	background-position: -43px -99px;
+}
+
+.timeline-date ul li.step2 .num i {
+	background-position: 0 -94px;
+}
+
+.timeline-date .step3 .right {
+	border: #f2cc10 1px solid;
+	color: #f2cc10;
+}
+
+.timeline-date .step3 .right .border_b2 {
+	background: #f2cc10;
+}
+
+.timeline-date .step3 .right .question.complete {
+	background-position: -69px -148px;
+}
+
+.timeline-date .step3 .right .question {
+	background-position: -43px -148px;
+}
+
+.timeline-date ul li.step3 .num i {
+	background-position: 0 -142px;
+}
+
+.timeline-date .step4 .right {
+	border: #9dc5ea 1px solid;
+	color: #9dc5ea;
+}
+
+.timeline-date .step4 .right .border_b2 {
+	background: #9dc5ea;
+}
+
+.timeline-date .step4 .right .question.complete {
+	background-position: -69px -7px;
+}
+
+.timeline-date .step4 .right .question {
+	background-position: -43px -7px;
+}
+
+.timeline-date ul li.step4 .num i {
+	background-position: 0 0;
+}
+
+.timeline-date .step5 .right {
+	border: #fd8080 1px solid;
+	color: #fd8080;
+}
+
+.timeline-date .step5 .right .border_b2 {
+	background: #fd8080;
+}
+
+.timeline-date .step5 .right .question.complete {
+	background-position: -69px -195px;
+}
+
+.timeline-date .step5 .right .question {
+	background-position: -43px -195px;
+}
+
+.timeline-date ul li.step5 .num i {
+	background-position: 0 -188px;
+}
+
+.timeline-date .step6 .right {
+	border: #9e6fb5 1px solid;
+	color: #9e6fb5;
+}
+
+.timeline-date .step6 .right .border_b2 {
+	background: #9e6fb5;
+}
+
+.timeline-date .step6 .right .question.complete {
+	background-position: -69px -286px;
+}
+
+.timeline-date .step6 .right .question {
+	background-position: -43px -286px;
+}
+
+.timeline-date ul li.step6 .num i {
+	width: 42px;
+	background-position: 0 -281px;
+}
+
+.timeline-date .step7 .right {
+	border: #cb9c6d 1px solid;
+	color: #cb9c6d;
+}
+
+.timeline-date .step7 .right .border_b2 {
+	background: #cb9c6d;
+}
+
+.timeline-date .step7 .right .question.complete {
+	background-position: -69px -331px;
+}
+
+.timeline-date .step7 .right .question {
+	background-position: -43px -331px;
+}
+
+.timeline-date ul li.step7 .num i {
+	background-position: 0 -326px;
+}
+
+.timeline-date .step8 .right {
+	border: #faa84a 1px solid;
+	color: #faa84a;
+}
+
+.timeline-date .step8 .right .border_b2 {
+	background: #faa84a;
+}
+
+.timeline-date .step8 .right .question.complete {
+	background-position: -69px -242px;
+}
+
+.timeline-date .step8 .right .question {
+	background-position: -43px -242px;
+}
+
+.timeline-date ul li.step8 .num i {
+	background-position: 0 -237px;
+}
